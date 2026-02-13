@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilim ve Matematik Tarihi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary: #1e3a8a;  /* koyu mavi */
+        --secondary: #3b82f6; /* açık mavi */
+        --bg: #f1f5f9;        /* açık gri */
+        --card-bg: #ffffff;
+        --text: #111827;
+        --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: var(--bg);
+        margin: 0;
+        padding: 0 20px;
+        color: var(--text);
+    }
+
+    h1 {
+        text-align: center;
+        color: var(--primary);
+        margin-top: 40px;
+        font-size: 2.8rem;
+    }
+
+    p.intro {
+        max-width: 900px;
+        margin: 20px auto 40px auto;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        text-align: justify;
+        color: #374151;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        background: var(--card-bg);
+        width: 280px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px var(--shadow);
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px var(--shadow);
+    }
+
+    .card h3 {
+        margin: 0 0 10px 0;
+        color: var(--secondary);
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        display: none;
+        margin-top: 10px;
+        font-size: 0.95rem;
+        color: #4b5563;
+    }
+
+    .card.active p {
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        color: #6b7280;
+        font-size: 0.9rem;
+        border-top: 1px solid #e5e7eb;
+    }
+</style>
+</head>
+<body>
+
+<h1>Bilim ve Matematik Tarihi</h1>
+
+<p class="intro">
+Matematik, fen ve sosyal bilimlerin temelini oluşturan bir araçtır. Fizikte hareket ve kuvvet hesaplamalarından, kimyada atom ve molekül yapılarının modellenmesine; ekonomide veri analizinden, biyolojide populasyon ve genetik hesaplamalarına kadar her alanda matematiksel yöntemler kullanılır. Matematiksel düşünce, bilim insanlarının sorun çözme ve modelleme becerilerini geliştirir ve bilimsel araştırmaları daha sistematik ve güvenilir hâle getirir.
+</p>
+
+<div class="cards">
+    <div class="card" data-year="858">
+        <h3>El-Battani (858-929)</h3>
+        <p>El-Battani, Arap astronom ve matematikçidir. Özellikle trigonometrik hesaplamaları geliştirerek güneş, ay ve gezegenlerin hareketlerini doğru şekilde ölçmüştür. Astronomi tabloları ve hesaplamalarıyla Orta Çağ bilim dünyasına büyük katkıda bulunmuştur.</p>
+    </div>
+    <div class="card" data-year="973">
+        <h3>Biruni (973-1048)</h3>
+        <p>Biruni, matematik, astronomi ve fizik alanlarında öncüdür. Dünya’nın çapını ölçmüş, gezegen hareketlerini modellemiş, trigonometrik hesaplamalar yapmıştır. Ayrıca coğrafya ve jeoloji alanında da çalışmalar yapmış, bilimsel metodolojiyi kullanmıştır.</p>
+    </div>
+    <div class="card" data-year="1394">
+        <h3>Uluğ Bey (1394-1449)</h3>
+        <p>Semerkand Gözlemevi’nin kurucusudur. Yıldız katalogları hazırlamış, trigonometri ve astronomik hesaplamalar yapmıştır. Matematik ve astronomiyi birleştirerek döneminin en doğru gözlemlerini sunmuştur.</p>
+    </div>
+    <div class="card" data-year="1465">
+        <h3>Piri Reis (1465-1554)</h3>
+        <p>Piri Reis, haritacılık ve denizcilik alanında matematiği uygulamıştır. Matematiksel koordinat sistemini kullanarak haritalar çizmiş, pusula ve coğrafya bilgilerini birleştirerek güvenli deniz seyirleri sağlamıştır.</p>
+    </div>
+    <div class="card" data-year="1910">
+        <h3>Cahit Arf (1910-1997)</h3>
+        <p>Cahit Arf, cebir ve sayı teorisi alanında çalışmış, Arf halkaları ve Arf kapanları kavramlarını geliştirmiştir. Modern matematikte önemli katkılarda bulunmuş ve Türkiye’de matematik biliminin yaygınlaşmasına öncülük etmiştir.</p>
+    </div>
+    <div class="card" data-year="1921">
+        <h3>Feza Gürsey (1921-1992)</h3>
+        <p>Feza Gürsey, teorik fizik ve grup teorisi uygulamalarıyla parçacık fiziğine katkı sağlamıştır. Matematiksel yöntemleri kullanarak kuark ve temel parçacık modellerini geliştirmiştir.</p>
+    </div>
+    <div class="card" data-year="1935">
+        <h3>Oktay Sinanoğlu (1935-2015)</h3>
+        <p>Oktay Sinanoğlu, kuantum kimyası ve moleküler biyoloji alanında matematiksel modeller geliştirmiştir. Matematiksel hesaplamaları ve teorileriyle uluslararası bilim dünyasında tanınmıştır.</p>
+    </div>
+</div>
+
+<footer>
+&copy; 2026 Bilim ve Matematik Tarihi
+</footer>
+
+<script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            cards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+            sortCards();
+        });
+    });
+
+    function sortCards() {
+        const container = document.querySelector('.cards');
+        const sorted = Array.from(cards).sort((a,b) => a.dataset.year - b.dataset.year);
+        sorted.forEach(c => container.appendChild(c));
+    }
+
+    sortCards();
+</script>
+
+</body>
+</html>
